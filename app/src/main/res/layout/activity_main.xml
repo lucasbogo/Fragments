@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnFragmentBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Black"
+        android:text="Black"/>
+
+    <Button
+        android:id="@+id/btnFragmentBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragmentBlack"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Blue"
+        android:text="Blue"/>
+
+    <Button
+        android:id="@+id/btnFragmentGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragmentBlue"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Green"
+        android:text="Green"/>
+
+    <Button
+        android:id="@+id/btnFragmentRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragmentGreen"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Red"
+        android:text="Red"/>
+
+    <Button
+        android:id="@+id/btnFragmentYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragmentRed"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Yellow"
+        android:text="Yellow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="493dp"
+        android:orientation="horizontal">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.fragments.BlackFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
